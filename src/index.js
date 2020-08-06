@@ -1,9 +1,9 @@
 import React from 'react'
-import ReactDOM from 'react-dom'
+import {render} from 'react-dom'
 
-function App(props) {
-  return <p>Hola {props.name}</p>
+function App({name}) {
+  return <p>Hola {name}</p>
 }
 
 const rootElement = document.getElementById('root')
-ReactDOM.render(<App name="Mich" />, rootElement)
+render(<App name="Mich" />, rootElement)
