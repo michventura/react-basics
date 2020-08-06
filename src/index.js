@@ -1,7 +1,8 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 
-ReactDOM.render(
-  React.createElement('p', null, 'Hola Mich'),
-  document.getElementById('root'),
-)
+function App() {
+  return <p>Hola Mich</p>
+}
+
+ReactDOM.render(<App />, document.getElementById('root'))
