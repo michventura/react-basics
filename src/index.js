@@ -1,11 +1,12 @@
 import React from 'react'
 import {render} from 'react-dom'
+import './style.css'
 
-const App = ({name}) => (
+const App = ({name = 'Mich'}) => (
   <>
-    <p>Hola {name}</p>
+    <p className="saludo">Hola {name}</p>
   </>
 )
 
 const rootElement = document.getElementById('root')
-render(<App name="Joe" />, rootElement)
+render(<App />, rootElement)
